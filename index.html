@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CS 1301</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/convenience.css">
+  <link rel="stylesheet" type="text/css" href="css/guest.css">
+  <link rel="shortcut icon" type="image/png" href="images/succulents-02.png">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <base href="https://cs.brown.edu/courses/csci1300/#course-info">
+
+  <!--fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="flex-row" id="nav-box">
+    <div class="wrap-container">
+      <a href="#course-info" class="nav-link fill-green-1">course info</a> 
+      <a href="#helpful-links" class="nav-link fill-green-3">helpful links</a>
+      <a href="#schedule" class="nav-link fill-green-2">schedule</a>
+      <a href="#calendar" class="nav-link fill-green-4">calendar</a>
+      <a href="#staff" class="nav-link fill-green-1">staff</a>
+    </div>
+  </div>
+
+  <!--hamburger menu (only visible on mobile devices)-->
+  <div id="sidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#course-info">course info</a>
+    <a href="#helpful-links">helpful links</a>
+    <a href="#schedule">schedule</a>
+    <a href="#calendar">calendar</a>
+    <a href="#staff">staff</a>
+    <a href="#faq">F.A.Q</a>
+  </div>
+  <div id="hamburger-box" class="flex-row" style="display: none;">
+    <button id="hamburger-btn" class="openbtn" onclick="openNav()">&#9776;</button>
+    <h3 style="color: white; position: fixed; top: 20px; right: 15px;">CSCI1300</h3>
+  </div>
+
+  <script>
+    // borrowed from https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp
+    /* Set the width of the sidebar to 250px (show it) */
+    function openNav() {
+      document.getElementById("sidepanel").style.width = "250px";
+    }
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+      document.getElementById("sidepanel").style.width = "0";
+    }
+  </script>
+
+  <div id="homepage" class="section flex-column" style="border: 0; height: 100vh;">
+
+    <div id="home" class="flex-column">
+      <h2 id="welcome">WELCOME TO</h2>
+      <h2 id="cs1300">CSCI 1301</h2>
+      <h2 id="uiux">Livestreaming Reinvented</h2>
+      <img id="logo" src="images/big-succulent-08.png">
+    </div>
+    <a href="#course-info" id="chevron" class="flex-row">
+      <h3 style="color: rgb(256,256,256,0.5);">learn more</h3>
+      <svg height="70" viewBox="0 0 21 21" width="70" xmlns="http://www.w3.org/2000/svg"><path d="m8.5.5-4 4-4-4" fill="none" stroke="rgb(256,256,256,0.5)" stroke-linecap="round" stroke-linejoin="round" transform="translate(6 8)"/></svg>
+    </a>
+  </div>
+
+
+  <div id="course-info" class="section" style="background-color: #CDE6CB;">
+
+    <div class="header flex-row">
+      <img src="images/succulents-04.png" class="succulent-png">
+      <h1 style="color: #A97C50;">COURSE INFO</h1>
+      <img src="images/succulents-04.png" class="succulent-png">
+    </div>
+
+    <div class="flex-column">
+      <div class="content">
+        <div id="logistics">
+          <div class="flex-space-between">
+            <h3 style="color: #2BB673">LOCATION:</h3>
+            <h4><a href="https://brown.zoom.us/j/96200647304">Zoom link</a></h4>
+          </div>
+          <div class="flex-space-between">
+            <h3 style="color: #2BB673">TIME:</h3>
+            <h4 style="width: 200px; text-align: right;">TTh 1:00pm - 2:20pm</h4>
+          </div>
+        </div>
+        <p>
+Livestreaming today is comprised of video game streams and Zoom classes. But as video production becomes more accessible, and devices become more mobile, the blending of the Instagram photo feed and TV reality show could produce a new generation of streaming personalities. 
+
+In this project-based course, we’ll investigate together the space of livestreaming technology beyond desktop gaming, exploring new configurations, interfaces, and improvements to current livestreaming systems. We’ll focus on creative (music, art, food, travel) or educational streaming, exploring how to support new forms of streamer-audience interaction and presence.
+        </p>
+        <a href="https://docs.google.com/document/d/1XlcD1bA4THmcWBqI607RxwrLY37ZUfIKXdqBBkH2IBc/edit?usp=sharing" class="green-link">
+          <h3>syllabus</h3>
+          <svg class="svg-show" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#2BB673" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><polyline points="12.329 7.328 12.328 1.67 6.671 1.669" transform="scale(1 -1) rotate(45 20.36 0)"/><line x1="13.5" x2=".5" y1="4.5" y2="4.5"/></g></svg>
+          <svg class="svg-hover" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><polyline points="12.329 7.328 12.328 1.67 6.671 1.669" transform="scale(1 -1) rotate(45 20.36 0)"/><line x1="13.5" x2=".5" y1="4.5" y2="4.5"/></g></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="helpful-links" class="section" style="background-color: #706881;">
+
+    <div class="header flex-row">
+      <img src="images/succulents-05.png" class="succulent-png">
+      <h1 style="color: #f5ce5b">helpful links</h1>
+      <img src="images/succulents-05.png" class="succulent-png">
+    </div>
+
+    <div id="helpful-links-box" class="flex-column">
+
+      <div class="flex-column" style="margin: 0px 10px;">
+        <h2>important</h2>
+        <div class="flex-row" style="margin: 0px 10px;">
+          <a style="margin: 10px;" href="https://piazza.com/class/kcw25izsiei48j" target="_blank" class="helpful-link">
+            <img src="images/piazza.png" class="small-icon">
+            <h3>piazza</h3>
+          </a>
+          <a style="margin: 10px;" href="https://canvas.brown.edu/" target="_blank" class="helpful-link">
+            <img src="images/canvas.png" class="small-icon">
+            <h3>canvas</h3>
+          </a>
+        </div>
+        <div class="flex-row">
+          <a style="margin: 10px;" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRow8i_X8guQpwU_da4y7rwDBbhTeYsUQ2b33MPkezcz2dLOpQxMBzo_6XBYJFTD6mSnT3-FVUsjh6S/pubhtml?gid=1112663023&single=true" target="_blank" class="helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><path d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v12c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-12c0-1.1045695.8954305-2 2-2z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/><path d="m.5 4.5h16" stroke="white" stroke-linecap="round" stroke-linejoin="round"/><g fill="white"><g><circle cx="8.5" cy="8.5" r="1"/><circle cx="4.5" cy="8.5" r="1"/><circle cx="12.5" cy="8.5" r="1"/></g><g><circle cx="8.5" cy="12.5" r="1"/><circle cx="4.5" cy="12.5" r="1"/><circle cx="12.5" cy="12.5" r="1"/></g></g></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><path d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v12c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-12c0-1.1045695.8954305-2 2-2z" stroke="#706881" stroke-linecap="round" stroke-linejoin="round"/><path d="m.5 4.5h16" stroke="#706881" stroke-linecap="round" stroke-linejoin="round"/><g fill="#706881"><g><circle cx="8.5" cy="8.5" r="1"/><circle cx="4.5" cy="8.5" r="1"/><circle cx="12.5" cy="8.5" r="1"/></g><g><circle cx="8.5" cy="12.5" r="1"/><circle cx="4.5" cy="12.5" r="1"/><circle cx="12.5" cy="12.5" r="1"/></g></g></g></svg>
+            <h3>schedule</h3>
+          </a>
+          <a style="margin: 10px;" href="https://script.google.com/a/brown.edu/macros/s/AKfycbw3-4g7pzYS8dgLLu5fHImIXC0Asu7Cqn_DLEGngPdEDRmFgxs/exec" target="_blank" class="helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><path d="m5.5.5h6v5h-6z"/><path d="m10.5 11.5h6v5h-6z"/><path d="m.5 11.5h6v5h-6z"/><path d="m3.498 11.5v-3h10v3"/><path d="m8.5 8.5v-3"/></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#706881" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><path d="m5.5.5h6v5h-6z"/><path d="m10.5 11.5h6v5h-6z"/><path d="m.5 11.5h6v5h-6z"/><path d="m3.498 11.5v-3h10v3"/><path d="m8.5 8.5v-3"/></g></svg>
+            <h3>ux factor</h3>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex-row" style="flex-wrap: wrap; align-items: flex-start;">
+        <div class="flex-column" style="margin: 25px 10px 0px 10px;">
+          <h2>course docs</h2>
+          <a href="https://docs.google.com/document/d/1XlcD1bA4THmcWBqI607RxwrLY37ZUfIKXdqBBkH2IBc/edit?usp=sharing" target="_blank" class="no-border-helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 3)"><path d="m12.5 12.5v-7l-5-5h-5c-1.1045695 0-2 .8954305-2 2v10c0 1.1045695.8954305 2 2 2h8c1.1045695 0 2-.8954305 2-2z"/><path d="m7.5.5v3c0 1.1045695.8954305 2 2 2h3"/></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 3)"><path d="m12.5 12.5v-7l-5-5h-5c-1.1045695 0-2 .8954305-2 2v10c0 1.1045695.8954305 2 2 2h8c1.1045695 0 2-.8954305 2-2z"/><path d="m7.5.5v3c0 1.1045695.8954305 2 2 2h3"/></g></svg>
+            <h3>syllabus</h3>
+          </a>
+          <a href="documents/[cs1300] Software License Guide.pdf" target="_blank" class="no-border-helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 4)"><path d="m2.5.48528137h11c.5522847 0 1 .44771525 1 1v8.01471863h-13v-8.01471863c0-.55228475.44771525-1 1-1z"/><path d="m1.11803399 9.5h13.76393201c.5522848 0 1 .44771525 1 1 0 .1552451-.0361451.3083582-.1055728.4472136l-1.2763932 2.5527864h-13l-1.2763932-2.5527864c-.24698925-.4939785-.0467649-1.09465154.44721359-1.34164079.13885544-.06942772.2919685-.10557281.4472136-.10557281z" transform="matrix(1 0 0 -1 0 23)"/></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 4)"><path d="m2.5.48528137h11c.5522847 0 1 .44771525 1 1v8.01471863h-13v-8.01471863c0-.55228475.44771525-1 1-1z"/><path d="m1.11803399 9.5h13.76393201c.5522848 0 1 .44771525 1 1 0 .1552451-.0361451.3083582-.1055728.4472136l-1.2763932 2.5527864h-13l-1.2763932-2.5527864c-.24698925-.4939785-.0467649-1.09465154.44721359-1.34164079.13885544-.06942772.2919685-.10557281.4472136-.10557281z" transform="matrix(1 0 0 -1 0 23)"/></g></svg>
+            <h3>software guide</h3>
+          </a>
+          <a href="https://docs.google.com/document/d/10gUVRN74JkL6Iqw3w_XEPcAaQkZFqlXYTRX-XFk51yk/edit?usp=sharing" target="_blank" class="no-border-helpful-link">
+            <svg class="svg-show" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 3)"><line x1="10.5" x2="6.5" y1=".5" y2="14.5"/><polyline points="7.328 2.672 7.328 8.328 1.672 8.328" transform="rotate(135 4.5 5.5)"/><polyline points="15.328 6.672 15.328 12.328 9.672 12.328" transform="scale(1 -1) rotate(-45 -10.435 0)"/></g></svg>
+            <svg class="svg-hover" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 3)"><line x1="10.5" x2="6.5" y1=".5" y2="14.5"/><polyline points="7.328 2.672 7.328 8.328 1.672 8.328" transform="rotate(135 4.5 5.5)"/><polyline points="15.328 6.672 15.328 12.328 9.672 12.328" transform="scale(1 -1) rotate(-45 -10.435 0)"/></g></svg>
+            <h3>deployment guide</h3>
+          </a>
+          <!-- <a href="https://docs.google.com/document/d/18I11UCHFAhYXajRXMa2aw6wh73hSKrbmSPy_o0z9V0c/edit?usp=sharing" target="_blank" class="no-border-helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 4)"><path d="m13.5 0 3 4-8 10-8-10 3.009-4z"/><path d="m.5 4h16"/><path d="m5.5 4 3 10"/><path d="m11.5 4-3 10"/><path d="m3.509 0 1.991 4 3-4 3 4 2-4"/></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 4)"><path d="m13.5 0 3 4-8 10-8-10 3.009-4z"/><path d="m.5 4h16"/><path d="m5.5 4 3 10"/><path d="m11.5 4-3 10"/><path d="m3.509 0 1.991 4 3-4 3 4 2-4"/></g></svg>
+            <h3>style guide</h3>
+          </a> -->
+        </div>
+
+        <div class="flex-column" style="margin: 25px 10px 0px 10px; align-content: flex-start;">
+          <h2>forms</h2>
+          <!-- <a href="https://forms.gle/jpaWjoDhp7LBfVk27" target="_blank" class="no-border-helpful-link">
+            <h3>waitlist form</h3>
+          </a> -->
+          <a href="https://forms.gle/BCEeyomrUDNbDjin8" target="_blank" class="no-border-helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(2.5 1.5)"><path d="m10 3h2.3406038c.4000282 0 .7615663.23839685.9191451.6060807l2.7402511 6.3939193v4c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-4l2.74025113-6.3939193c.15757879-.36768385.51911692-.6060807.91914503-.6060807h2.34060384"/><path d="m10.121 3.964-.06 4.182-4.182.061" transform="matrix(.70710678 .70710678 -.70710678 .70710678 6.646598 -3.874306)"/><path d="m8 0v9"/><path d="m0 10h4c.55228475 0 1 .4477153 1 1v1c0 .5522847.44771525 1 1 1h4c.5522847 0 1-.4477153 1-1v-1c0-.5522847.4477153-1 1-1h4"/></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="translate(2.5 1.5)"><path d="m10 3h2.3406038c.4000282 0 .7615663.23839685.9191451.6060807l2.7402511 6.3939193v4c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-4l2.74025113-6.3939193c.15757879-.36768385.51911692-.6060807.91914503-.6060807h2.34060384"/><path d="m10.121 3.964-.06 4.182-4.182.061" transform="matrix(.70710678 .70710678 -.70710678 .70710678 6.646598 -3.874306)"/><path d="m8 0v9"/><path d="m0 10h4c.55228475 0 1 .4477153 1 1v1c0 .5522847.44771525 1 1 1h4c.5522847 0 1-.4477153 1-1v-1c0-.5522847.4477153-1 1-1h4"/></g></svg>
+            <h3>project handin form</h3>
+          </a>
+          <a href="https://forms.gle/5L5CCLRqozXrUnmE8" target="_blank" class="no-border-helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 20 2)"><path d="m8.5 2.56534572h2c3.3137085 0 6 2.6862915 6 6v1.93465428c0 3.3137085-2.6862915 6-6 6h-2c-3.3137085 0-6-2.6862915-6-6v-1.93465428c0-3.3137085 2.6862915-6 6-6z"/><path d="m3.94265851-.12029102c-1.05323083.28505997-1.86575682 1.17688618-1.86575682 2.30840383 0 1.16606183.73081563 2.21070886 1.78973019 2.50733508" transform="matrix(.62932039 .77714596 -.77714596 .62932039 2.893856 -1.491094)"/><path d="m16.9295345-.10708618c-1.0898445.26224883-1.9419712 1.17003523-1.9419712 2.3284815 0 1.16644061.7312905 2.21138754 1.7907622 2.50762392" transform="matrix(-.62932039 .77714596 .77714596 .62932039 24.205765 -11.545558)"/><path d="m9.5 5.5v4h-3.5"/><path d="m15 15 2 2"/><path d="m2 15 2 2" transform="matrix(-1 0 0 1 6 0)"/></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 20 2)"><path d="m8.5 2.56534572h2c3.3137085 0 6 2.6862915 6 6v1.93465428c0 3.3137085-2.6862915 6-6 6h-2c-3.3137085 0-6-2.6862915-6-6v-1.93465428c0-3.3137085 2.6862915-6 6-6z"/><path d="m3.94265851-.12029102c-1.05323083.28505997-1.86575682 1.17688618-1.86575682 2.30840383 0 1.16606183.73081563 2.21070886 1.78973019 2.50733508" transform="matrix(.62932039 .77714596 -.77714596 .62932039 2.893856 -1.491094)"/><path d="m16.9295345-.10708618c-1.0898445.26224883-1.9419712 1.17003523-1.9419712 2.3284815 0 1.16644061.7312905 2.21138754 1.7907622 2.50762392" transform="matrix(-.62932039 .77714596 .77714596 .62932039 24.205765 -11.545558)"/><path d="m9.5 5.5v4h-3.5"/><path d="m15 15 2 2"/><path d="m2 15 2 2" transform="matrix(-1 0 0 1 6 0)"/></g></svg>
+            <h3>late pass form</h3>
+          </a>
+          <a href="https://forms.gle/U9mCY3Jxw138ux5M7" target="_blank" class="no-border-helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><g transform="matrix(0 -1 1 0 .5 16.5)"><path d="m16.25.75v5h-5.5" transform="matrix(0 1 1 0 10.25 -10.25)"/><path d="m16 6c-2.8366699-3.33333333-5.6700033-5-8.5-5-2.82999674 0-5.32999674 1-7.5 3"/></g><g transform="matrix(0 1 -1 0 16 0)"><path d="m16.75.25v5h-5.5" transform="matrix(0 1 1 0 11.25 -11.25)"/><path d="m16.5 5.5c-2.8366699-3.33333333-5.6700033-5-8.5-5-2.82999674 0-5.32999674 1-7.5 3"/></g></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><g transform="matrix(0 -1 1 0 .5 16.5)"><path d="m16.25.75v5h-5.5" transform="matrix(0 1 1 0 10.25 -10.25)"/><path d="m16 6c-2.8366699-3.33333333-5.6700033-5-8.5-5-2.82999674 0-5.32999674 1-7.5 3"/></g><g transform="matrix(0 1 -1 0 16 0)"><path d="m16.75.25v5h-5.5" transform="matrix(0 1 1 0 11.25 -11.25)"/><path d="m16.5 5.5c-2.8366699-3.33333333-5.6700033-5-8.5-5-2.82999674 0-5.32999674 1-7.5 3"/></g></g></svg>
+            <h3>regrade request form</h3>
+          </a>
+          <a href="https://forms.gle/JVDLKSa5Uc8qkfQ2A" target="_blank" class="no-border-helpful-link">
+            <svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0 -1 1 0 4 19)"><path d="m15.328 5.672v5.656h-5.656" transform="matrix(-.70710678 .70710678 .70710678 .70710678 15.328661 -6.349339)"/><path d="m12.5.5v12"/><path d="m7.328 1.672h-5.656v5.656" transform="matrix(-.70710678 .70710678 .70710678 .70710678 4.500028 -1.863972)"/><path d="m4.5.5v12"/></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0 -1 1 0 4 19)"><path d="m15.328 5.672v5.656h-5.656" transform="matrix(-.70710678 .70710678 .70710678 .70710678 15.328661 -6.349339)"/><path d="m12.5.5v12"/><path d="m7.328 1.672h-5.656v5.656" transform="matrix(-.70710678 .70710678 .70710678 .70710678 4.500028 -1.863972)"/><path d="m4.5.5v12"/></g></svg>
+            <h3>studio switch form</h3>
+          </a>
+          <a href="https://forms.gle/9F6Ec2wX8Tvtyr2C7" target="_blank" class="no-border-helpful-link">
+        	<svg class="svg-show" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><path d="m8.24920737-.79402796c1.17157287 0 2.12132033.94974747 2.12132033 2.12132034v13.43502882l-2.12132033 3.5355339-2.08147546-3.495689-.03442539-13.47488064c-.00298547-1.16857977.94191541-2.11832105 2.11049518-2.12130651.00180188-.00000461.00360378-.00000691.00540567-.00000691z" transform="matrix(.70710678 .70710678 -.70710678 .70710678 8.605553 -3.271644)"/><path d="m7.5 15.5h8"/><path d="m13.5 4.5 1 1"/></g></svg>
+            <svg class="svg-hover" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#52A25E" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><path d="m8.24920737-.79402796c1.17157287 0 2.12132033.94974747 2.12132033 2.12132034v13.43502882l-2.12132033 3.5355339-2.08147546-3.495689-.03442539-13.47488064c-.00298547-1.16857977.94191541-2.11832105 2.11049518-2.12130651.00180188-.00000461.00360378-.00000691.00540567-.00000691z" transform="matrix(.70710678 .70710678 -.70710678 .70710678 8.605553 -3.271644)"/><path d="m7.5 15.5h8"/><path d="m13.5 4.5 1 1"/></g></svg>
+            <h3>feedback form</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="schedule" class="flex-column section" style="background-color: #2B2A2D;">
+    <div class="header flex-row">
+      <img src="images/succulents-02.png" class="succulent-png">
+      <h1 style="color: #A29BBA">SCHEDULE</h1>
+      <img src="images/succulents-02.png" class="succulent-png">
+    </div>
+    <div class="important-note">
+      <p>We <strong>strongly recommend</strong> bookmarking this schedule, as this contains all information regarding
+      assignments, lectures, studios, and readings.</p>
+    </div>
+    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRow8i_X8guQpwU_da4y7rwDBbhTeYsUQ2b33MPkezcz2dLOpQxMBzo_6XBYJFTD6mSnT3-FVUsjh6S/pubhtml?gid=1112663023&single=true" target="_blank" class="purple-link" style="margin-bottom: 40px;">
+      <h3>link to schedule</h3>
+      <svg class="svg-show" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#A29BBA" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><polyline points="12.329 7.328 12.328 1.67 6.671 1.669" transform="scale(1 -1) rotate(45 20.36 0)"/><line x1="13.5" x2=".5" y1="4.5" y2="4.5"/></g></svg>
+      <svg class="svg-hover" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><polyline points="12.329 7.328 12.328 1.67 6.671 1.669" transform="scale(1 -1) rotate(45 20.36 0)"/><line x1="13.5" x2=".5" y1="4.5" y2="4.5"/></g></svg>
+    </a>
+
+    <iframe id="schedule-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRow8i_X8guQpwU_da4y7rwDBbhTeYsUQ2b33MPkezcz2dLOpQxMBzo_6XBYJFTD6mSnT3-FVUsjh6S/pubhtml?gid=1112663023&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+  </div>
+
+
+  <div id="calendar" class="flex-column section" style="background-color: #CDE6CB;">
+    <div class="header flex-row">
+      <img src="images/succulents-07.png" class="succulent-png">
+      <h1 style="color: #f5ce5b">calendar</h1>
+      <img src="images/succulents-07.png" class="succulent-png">
+    </div>
+    <div class="important-note">
+      <p style="color: #2B2A2D; margin-bottom: 10px;">To subscribe to the course gcal, click <a href="https://calendar.google.com/calendar?cid=Y19nMXR0M2lpbjZ2ZDJqcTJlbzFpamJxNmJya0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank" style="color: #52A25E;">here</a>.</p>
+      <p style="color: #2B2A2D; margin-bottom: 5px;">To sign up for TA Hours, please go to <a href="https://signmeup.cs.brown.edu/" target="_blank" style="color: #52A25E;">SignMeUp</a>.</p>
+      <h4 style="margin-bottom: 20px;color: #0E6A3E;text-transform: uppercase;font-size: 12px;">(( Zoom links for TA hours will be in the SignMeUp queue ))</h4>
+    </div>
+    <iframe id="calendar-iframe" src="https://calendar.google.com/calendar/embed?src=c_akq4ii2htocl9ll8fo104hcodc%40group.calendar.google.com&ctz=America%2FNew_York;src=Y19nMXR0M2lpbjZ2ZDJqcTJlbzFpamJxNmJya0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237CB342&amp;mode=WEEK" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+  <div id="staff" class="flex-column section" style="background-color: #706881;">
+    <div class="header flex-row">
+      <img src="images/succulents-06.png" class="succulent-png">
+      <h1 style="color: #2BB673">STAFF</h1>
+      <img src="images/succulents-06.png" class="succulent-png">
+    </div>
+
+    <div id="emails" class="flex-row wrap-container">
+      <div class="email">
+        <h3 style="color: white;">uiuxtas@lists.cs.brown.edu</h3>
+        <h4>(email all TAs, use this by default)</h4>
+      </div>
+      <div class="email">
+        <h3 style="color: white;">uiuxhtas@lists.cs.brown.edu</h3>
+        <h4>(HTAs, Grad TA, &amp; Jeff)</h4>
+      </div>
+      <div class="email">
+        <h3 style="color: white;">jeff@cs.brown.edu</h3>
+        <h4>(sensitive issues)</h4>
+      </div>
+    </div>
+
+    <div class="shelf flex-column">
+      <div class="ta-box-left flex-row">
+        <div class="img-box">
+          <img src="staff/succulents-jeff.png" class="ta-cactus">
+          <img src="staff/jeff.jpg" class="ta-img">
+        </div>
+
+        <div class="flex-column bio-text">
+          <h3>[PROFESSOR] JEFF</h3>
+          <h4>jeff bio here!</h4>
+        </div>
+      </div>
+      <img src="images/shelf.png" class="shelf-png">
+    </div>
+
+
+    <div class="shelf flex-column">
+      <div class="flex-row ta-wrapper">
+        <div class="ta-box-left flex-row">
+          <div class="img-box">
+            <img src="staff/succulents-sarah.png" class="ta-cactus" id="sarah-cactus" style="margin-bottom: 3px;">
+            <img src="staff/sarah.jpg" class="ta-img">
+          </div>
+          <div class="flex-column bio-text">
+            <h3>[HTA] Griffin</h3>
+            <h4>griffin bio here!</h4>
+          </div>
+        </div>
+      </div>
+      <img src="images/shelf.png" class="shelf-png">
+    </div>
+    </div>
+</body>
+
+</html>
