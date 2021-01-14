@@ -1,28 +1,11 @@
 /* COLOR SCHEME:
-	#f5ce5b (og mustard-y yellow)
-	#FAF06A (light yellow)
-
-	#A29BBA (light purple)
-	#706881 (dark purple)
-
-	#D2BDC8 (light rose pink)
-	#BA98AB (medium rose pink)
-	#f77c7c (og hot pink)
-
-	#2BB673 (cactus-04 color)
-	#52A25E (cactus-02 color)
-	#85C87C (cactus-03 fill color)
-	#0E6A3E (dark green shadow color)
-	#CDE6CB (light green background)
-
-	#754C29 (dark brown from pot)
-	#A97C50 (light brown from pot)
-
-	#2B2A2D (dark gray)
-	#D1D3D4 (light gray)
-
-	#b39971 (og light brown)
-	#F2F3F3 (ultra light gray)
+  #0e0e10 (black, background color)
+  #26262c (dark grey, secondary background color)
+  #9146FF (Twitch purple)
+  #000000 (black ops)
+  #F0F0FF (ice)
+  #BFABFF (widow, light purple)
+  #D2D2E6 (smoke)
 */
 
 html {
@@ -30,8 +13,8 @@ html {
 }
 
 body {
-	background-color: #2B2A2D;
-    font-family: 'Lato', sans-serif;
+	background-color: #000000;
+    font-family: 'Helvetica', 'Arial';
     font-weight: 300;
 	/* font-family: 'transatlight', sans-serif; */
 	margin: 0;
@@ -43,26 +26,28 @@ body {
 }
 
 #home {
-	border: 5px solid rgb(256,256,256,0.5);
+	/* border: 5px solid rgb(256,256,256,0.5); */
+  background-color: #9146FF;
+  border-radius: 25px;
 	padding: 25px;
-    font-weight: 700;
+  font-weight: 700;
 }
 
 #welcome {
 	font-size: 36px;
 }
 
-#cs1300 {
-    font-weight: 700;
-	color: white;
+#cs1301 {
+  font-weight: 700;
+	color: #F0F0FF;
 	font-size: 140px;
 	margin: -15px 0px;
 }
 
-#uiux {
+#livestreaming {
 	text-transform: lowercase;
 	font-size: 36px;
-	color: rgb(256,256,256,0.5);
+	color: #F0F0FF
 }
 
 #logo {
@@ -95,7 +80,7 @@ body {
 	top: 0;
 	z-index: 2;
 	width: 100%;
-	background-color: rgb(43,42,45,0.6);
+	background-color: #18181b
 }
 
 .nav-link {
@@ -128,11 +113,18 @@ body {
 
 .nav-link:hover {
 	background-color: #706881;
+  text-shadow: -2px 2px #9146FF;
+  color: #F0F0FF;
+  transition: .25s;
 	cursor: pointer;
 }
 
+.nav-link:visited {
+    color: #F0F0FF !important;
+  }
+
 .content {
-	width: 60%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -148,7 +140,7 @@ body {
 	top: 0;
 	width: 100%;
 	max-width: 100vw;
-	border-top: 5px solid rgb(10,10,10,0.5);
+	border-top: 1px solid #fff
 }
 
 .small-icon {
@@ -166,10 +158,6 @@ body {
 	align-content: center;
 }
 
-#helpful-links-box h2 {
-	color: #f5ce5b;
-}
-
 .helpful-link {
 	text-decoration: none;
 	color: white;
@@ -179,8 +167,8 @@ body {
 	justify-content: center;
 	width: 275px;
 	padding: 5px 15px;
-	border-radius: 5px;
-	border: 3px solid white;
+	background-color: #9146FF;
+  border-radius: 25px;
 	margin: 10px 0px;
 }
 
@@ -259,7 +247,7 @@ body {
 	font-size: 16px;
   font-weight: normal;
   margin: 0px 0px 0px 25px;
-  color: rgb(256,256,256,0.75);
+  color: #F0F0FF;
 }
 
 #faq h3 {
@@ -269,7 +257,7 @@ body {
 }
 
 .important-note {
-	width: 60%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -281,13 +269,13 @@ body {
 	font-size: 20px;
 	letter-spacing: 2px;
 	text-align: center;
-	color: rgb(256,256,256,0.8);
+	color: #F0F0FF;
 	margin: 0px 0px 10px 0px;
 }
 
 .important-note strong {
 	font-weight: bold;
-	color: #2BB673;
+	color: #9146FF;
 }
 
 .important-note a {
@@ -312,8 +300,8 @@ body {
 	margin: 0px 20px;
 }
 
-.ta-cactus {
-	height: 200px;
+.ta-icon {
+	height: 150px;
 	text-shadow: 0 0 25px brown;
 	z-index: 1;
 	margin-top: -10px;
@@ -328,7 +316,7 @@ body {
 }
 
 .bio-text h3 {
-	color: #FAF06A;
+	color: #9146FF;
 	margin: 0;
 }
 
@@ -368,7 +356,7 @@ body {
 }
 
 
-.img-box:hover .ta-cactus{
+.img-box:hover .ta-icon{
   opacity: 0;
 }
 
@@ -386,7 +374,7 @@ body {
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #26262c;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.4s;
@@ -397,14 +385,18 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #F0F0FF;
   display: block;
   transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-  color: #2BB673;
+  color: #9146FF !important;
+}
+
+.sidepanel a:visited {
+  color: #F0F0FF;
 }
 
 /* Position and style the close button (top right corner) */
@@ -438,14 +430,22 @@ body {
 	z-index: 2;
 	width: 100%;
 	justify-content: space-between;
-	background-color: rgb(43,42,45,0.6);
+	background-color: #18181b;
 }
 
 
 @media only screen and (max-width: 845px) {
 	#emails {
 		width: 90%;
-	}
+    }
+    
+    .content {
+        width: 60%;
+    }
+
+    .important-note {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -457,12 +457,12 @@ body {
 		font-size: 24px;
 	}
 
-	#cs1300 {
+	#cs1301 {
 		font-size: 90px;
 		margin: -20px 0px;
 	}
 
-	#uiux {
+	#livestreaming {
 		font-size: 24px;
 	}
 }
@@ -486,51 +486,9 @@ body {
 		margin: 0px 5px;
 	}
 
-	.ta-cactus {
+	.ta-icon {
 		align-self: center;
-	}
-
-	#sarah-cactus {
 		margin-bottom: 12px !important;
-	}
-
-	#laura-cactus {
-		margin-bottom: -1px !important;
-	}
-
-	#gabby-cactus {
-		margin-bottom: -3px !important;
-	}
-
-	#stanley-cactus {
-		margin-bottom: 15px !important;
-		margin-top: 5px;
-	}
-
-	#miranda-cactus {
-		margin-bottom: 11px !important;
-		margin-top: 5px;
-	}
-
-	#felicia-cactus {
-		margin-bottom: 20px !important;
-	}
-
-	#ndunge-cactus {
-		margin-bottom: 17px !important;
-		margin-top: 5px;
-	}
-
-	#ifechi-cactus {
-		margin-bottom: -16px !important;
-	}
-
-	#minna-cactus {
-		margin-bottom: -2px !important;
-	}
-
-	#michael-cactus {
-		margin-bottom: -15px !important;
 	}
 
 	.bio-text h4 {
@@ -563,13 +521,9 @@ body {
 		font-size: 36px !important;
 	}
 
-	#home {
-		border: 0;
-	}
-
-    #chevron {
-        position: unset;
-    }
+  #chevron {
+    position: unset;
+  }
 
 	.content {
 		width: 80%;
@@ -604,10 +558,15 @@ body {
         padding: 0;
     }
 
-    #cs1300 {
+    #cs1301 {
 	    font-size: 50px;
         margin: 5px 0px;
     }
+    
+    #livestreaming {
+      font-size: 15px;
+    }
+    
 }
 
 .guest-header {
@@ -669,8 +628,8 @@ body {
 h1 {
     font-weight: 700;
     font-size: 45px;
-	color: #b39971;
-	text-shadow: -3px 4px white;
+	color: #F0F0FF;
+	text-shadow: -2px 2px #9146FF;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	letter-spacing: 3px;
@@ -682,13 +641,21 @@ a {
 	text-decoration: none;
 }
 
+h4 a:hover {
+  color: #BFABFF !important;
+}
+
+a:visited, a:active {
+  color: #9146FF;
+}
+
 h2 {
     font-weight: 700;
 	font-size: 28px;
 	margin: 5px 0px;
 	text-align: center;
 	letter-spacing: 3px;
-	color: #52A25E;
+	color: #9146FF;
 }
 
 h3 {
@@ -705,7 +672,7 @@ h4 {
     font-weight: 400;
 	font-size: 16px;
 	text-transform: lowercase;
-	color: black;
+	color: #F0F0FF;
 	font-weight: normal;
 	margin: 5px 0px;
 	letter-spacing: 1px;
@@ -714,8 +681,7 @@ h4 {
 p {
 	font-weight: 200;
 	font-size: 20px;
-	color: #706881;
-	color: black;
+	color: #F0F0FF;
 }
 
 .flex-row {
@@ -738,38 +704,6 @@ p {
 	justify-content: space-between;
 }
 
-.green-link {
-	text-decoration: none;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	width: 250px;
-	padding: 5px 15px;
-	border-radius: 5px;
-	border: 3px solid #2BB673;
-	margin: 10px 0px;
-}
-
-.green-link h3 {
-	color: #2BB673;
-}
-.green-link:hover {
-	background-color: #2BB673;
-}
-.green-link:hover h3 {
-	color: white;
-}
-.green-link:hover .svg-show {
-	display: none;
-}
-.green-link .svg-hover {
-	display: none;
-}
-.green-link:hover .svg-hover {
-	display: inline;
-}
-
 .purple-link {
 	text-decoration: none;
 	display: flex;
@@ -778,15 +712,16 @@ p {
 	justify-content: center;
 	width: 250px;
 	padding: 5px 15px;
-	border-radius: 5px;
-	border: 3px solid #A29BBA;
+	background-color: #9146FF;
+  border-radius: 25px;
 	margin: 10px 0px;
 }
+
 .purple-link h3 {
-	color: #A29BBA;
+	color: #F0F0FF;
 }
 .purple-link:hover {
-	background-color: #A29BBA;
+	background-color: #BFABFF;
 }
 .purple-link:hover h3 {
 	color: white;
@@ -801,34 +736,18 @@ p {
 	display: inline;
 }
 
-.fill-green-1 {
-	background-color: #2BB673;
-}
-.fill-green-1:hover {
-	background-color: white;
-	color: #2BB673;
+.twitch-link:hover {
+  color: #9146FF
 }
 
-.fill-green-2 {
-	background-color: #52A25E;
-}
-.fill-green-2:hover {
-	background-color: white;
-	color: #52A25E;
+.twitch-link {
+  color: #F0F0FF;
 }
 
-.fill-green-3 {
-	background-color: #85C87C;
-}
-.fill-green-3:hover {
-	background-color: white;
-	color: #85C87C;
+.twitch-link:visited {
+  color: #F0F0FF;
 }
 
-.fill-green-4 {
-	background-color: #0E6A3E;
-}
-.fill-green-4:hover {
-	background-color: white;
-	color: #0E6A3E;
+.twitch-link:hover {
+  color: #BFABFF;
 }
