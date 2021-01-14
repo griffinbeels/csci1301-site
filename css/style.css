@@ -339,7 +339,6 @@ body {
 .shelf-png {
 	width: 700px;
 	height: auto;
-	margin-top: -30px;
 }
 
 .img-box {
@@ -420,13 +419,13 @@ body {
   font-size: 30px;
   cursor: pointer;
   background-color: rgb(0,0,0,0);
-  color: white;
+  color: #F0F0FF;
   border: none;
   padding: 0;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  color: #BFABFF;
 }
 
 #hamburger-box {
@@ -451,7 +450,7 @@ body {
     }
 
     .important-note {
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -477,15 +476,6 @@ body {
 @media only screen and (max-width: 720px) {
 	.shelf-png {
 		width: 90%;
-	}
-
-	.ta-box-left, .ta-box-right {
-		max-width: 45%;
-	}
-
-	.ta-box-left {
-		flex-direction: column-reverse !important;
-		margin: 0px 5px;
 	}
 
 	.ta-box-right {
@@ -572,7 +562,11 @@ body {
     
     #livestreaming {
       font-size: 15px;
-    }
+	}
+	
+	#bio-text {
+		margin-bottom: 10px;
+	}
     
 }
 
