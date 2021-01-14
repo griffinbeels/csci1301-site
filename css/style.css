@@ -111,6 +111,13 @@ body {
 	width: 85%;
 }
 
+#learn-more {
+	color: #F0F0FF;
+}
+#learn-more:hover {
+	text-shadow: -2px 2px #9146FF;
+}
+
 .nav-link:hover {
 	background-color: #706881;
   text-shadow: -2px 2px #9146FF;
@@ -160,7 +167,7 @@ body {
 
 .helpful-link {
 	text-decoration: none;
-	color: white;
+	color: #F0F0FF;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -173,17 +180,17 @@ body {
 }
 
 .helpful-link h3 {
-	color: white;
+	color: #F0F0FF;
 	margin-left: 5px;
 }
 
 .helpful-link:hover h3 {
-	color: #706881;
+	color: #D2D2E6;
 }
 
 .helpful-link:hover {
-	background-color: white;
-	color: black;
+	background-color: #BFABFF;
+	color: #D2D2E6;
 }
 
 .helpful-link .svg-hover {
@@ -208,7 +215,7 @@ body {
 }
 
 .no-border-helpful-link {
-	color: white;
+	color: #F0F0FF;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -219,15 +226,15 @@ body {
 }
 
 .no-border-helpful-link h3 {
-	color: white;
+	color: #F0F0FF;
 	margin-left: 5px;
 }
 .no-border-helpful-link:hover h3 {
-	color: #52A25E;
+	color: #BFABFF;
 }
 
 .no-border-helpful-link:hover {
-	color: #52A25E;
+	color: #BFABFF;
 }
 
 #schedule-iframe {
