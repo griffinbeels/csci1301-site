@@ -63,7 +63,7 @@ body {
 	bottom: 0;
 }
 
-.succulent-png {
+.header-icon {
 	height: 100px;
 	width: auto;
 	margin: 0px 15px;
@@ -133,7 +133,7 @@ body {
 
 .section {
 	display: flex;
-	min-height: 70vh;
+	min-height: 50vh;
 	flex-direction: column;
 	justify-content: center;
 	padding-bottom: 20px;
@@ -513,7 +513,7 @@ body {
 		flex-direction: column;
 	}
 
-	.succulent-png {
+	.header-icon {
 		height: 60px;
 	}
 
@@ -750,4 +750,11 @@ p {
 
 .twitch-link:hover {
   color: #BFABFF;
+}
+
+:target:before {
+	content:"";
+	display:block;
+	height:150px; /* fixed header height*/
+	margin:-90px 0 0; /* negative fixed header height */
 }
